@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
+import 'antd-mobile/dist/antd-mobile.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'amfe-flexible'
+// import './libs/amfe-flexible'
 
 ReactDOM.render(
   <React.StrictMode>
