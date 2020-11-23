@@ -1,12 +1,22 @@
+import React from 'react'
 import './App.scss';
-import {Button} from 'antd-mobile';
+import Layout from "./layout";
+import {
+  Switch,
+  Route,
+} from "react-router-dom";
+import { withRouter } from "react-router";
 
-function App() {
-    return (
-        <div className="App">
-            <Button type="primary">按钮</Button>
-        </div>
-    );
+function App(props) {
+  return (
+    <div className="App">
+      <Switch>
+        <Route path='/'>
+          <Layout {...props} />
+        </Route>
+      </Switch>
+    </div>
+  );
 }
 
-export default App;
+export default withRouter(App);

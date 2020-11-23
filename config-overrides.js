@@ -24,7 +24,14 @@ module.exports = {
             style: 'css',   // true 默认 less
         }),
         addWebpackAlias({
-            "@": path.resolve(__dirname, './src')
+            "@": path.resolve(__dirname, './src'),
+            "assets": path.resolve(__dirname, './src/assets'),
+            "layout": path.resolve(__dirname, './src/layout'),
+            "components": path.resolve(__dirname, './src/components'),
+            "pages": path.resolve(__dirname, './src/pages'),
+            "libs": path.resolve(__dirname, './src/libs'),
+            "store": path.resolve(__dirname, './src/store'),
+            "router": path.resolve(__dirname, './src/router'),
         }),
         // addLessLoader({
         //     lessOptions: {

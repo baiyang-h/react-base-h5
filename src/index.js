@@ -5,11 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'amfe-flexible'
 // import './libs/amfe-flexible'
+import 'assets/font/iconfont.css'
+import {
+  BrowserRouter as Router,
+} from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Router>
     <App />
-  </React.StrictMode>,
+  </Router>,
   document.getElementById('root')
 );
 
